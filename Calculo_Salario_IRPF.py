@@ -218,7 +218,22 @@ def procesar_ano(anio):
         base_imponible = max(0, rendimiento_neto - red_trabajo)
 
         cuotas_tramos, cuota_integra = calcular_cuotas_por_tramo(base_imponible, p['tramos_irpf'])
-        cuota_minimo = p['irpf_minimo'] * p['tramos_irpf'][0][1]
+        # Fix: calcular cuota del mínimo personal recorriendo la escala (Art. 63 LIRPF)
+        # En vez de multiplicar por el primer tipo (falso para mínimos > primer tramo)
+        minimo = p['irpf_minimo']
+        cuota_minimo = 0.0
+        prev_lim = 0.0
+        remaining = minimo
+        for lim, tipo in p['tramos_irpf']:
+            if remaining <= 0:
+                break
+            if base_imponible > prev_lim:
+                ancho = lim - prev_lim
+                disponible = min(remaining, ancho, min(base_imponible, lim) - prev_lim)
+                if disponible > 0:
+                    cuota_minimo += disponible * tipo
+                    remaining -= disponible
+            prev_lim = lim
         cuota_teorica = max(0, cuota_integra - cuota_minimo)
 
         deduccion = p['deduccion_smi'](bruto)
@@ -287,7 +302,21 @@ def calcular_nomina_agregada(bruto, anio, p):
             q_integra += (base_imp - lim_ant) * tipo
             break
 
-    q_min = p['irpf_minimo'] * p['tramos_irpf'][0][1]
+    # Fix: calcular cuota del mínimo personal recorriendo la escala (Art. 63 LIRPF)
+    minimo = p['irpf_minimo']
+    q_min = 0.0
+    prev_lim = 0.0
+    remaining = minimo
+    for lim, tipo in p['tramos_irpf']:
+        if remaining <= 0:
+            break
+        if base_imp > prev_lim:
+            ancho = lim - prev_lim
+            disponible = min(remaining, ancho, min(base_imp, lim) - prev_lim)
+            if disponible > 0:
+                q_min += disponible * tipo
+                remaining -= disponible
+        prev_lim = lim
     q_teorica = max(0, q_integra - q_min)
     q_smi = max(0, q_teorica - p['deduccion_smi'](bruto))
 
