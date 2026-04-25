@@ -1,67 +1,108 @@
-# 💶 Auditor Histórico de Nóminas e IRPF (España 2012-2026) con Ajuste de Inflación
+# 💶 IRPF por Comunidad Autónoma — Calculadora Interactiva
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![Web](https://img.shields.io/badge/web-live-success.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Estado](https://img.shields.io/badge/estado-Completado-success.svg)
 
-Auditor fiscal en Python que calcula el salario neto en España (2012-2026) euro a euro. Genera una auditoría masiva en Excel del IRPF, Seguridad Social, MEI y analiza la pérdida de poder adquisitivo ajustada a la inflación real.
+Calculadora web que compara el salario neto en las **19 comunidades autónomas** españolas, con escalas IRPF 2026 separadas (estatal + autonómica) y cálculo exacto según la LIRPF.
 
-A diferencia de las calculadoras de sueldo neto convencionales, este script **genera un informe exhaustivo de más de 1.5 millones de cálculos**, analizando todos los tramos salariales (de 0€ a 100.000€) y aplicando un **análisis macroeconómico de inflación** para revelar la pérdida real de poder adquisitivo provocada por la "progresividad en frío" (el conocido como *hachazo fiscal silencioso*).
+Basada en el trabajo de [Jon González](https://github.com/jongonzlz/Calculadora-de-Salarios-y-Progresividad-en-Fr-o), con aportaciones propias significativas.
 
-## ✨ Características Principales
+## 🌐 Demo
 
-* **📜 Histórico Normativo (2012-2026):** Incluye toda la evolución de bases máximas, tipos de cotización, reducciones, gastos fijos y escalas del IRPF.
-* **🔎 Precisión Legal Absoluta:**
-  * Aplicación estricta de la **Reducción por Rendimientos del Trabajo (Art. 20)** calculada sobre el rendimiento neto previo, separada de los gastos deducibles generales (Art. 19).
-  * Régimen transitorio de IRPF del año **2018** (Disposición Adicional 47ª LIRPF).
-  * Tope máximo legal de retención en nómina del **43%** (Art. 85.3 RIRPF).
-  * Deducciones específicas del SMI actualizadas a 2025 y 2026.
-* **🏛️ Nuevos Impuestos:** Integración completa del **Mecanismo de Equidad Intergeneracional (MEI)** y la nueva **Cuota de Solidaridad** progresiva (aplicable a partir de 2025 y actualizada a los tipos de 2026).
-* **📉 Análisis de Inflación Real:** Compara salarios actuales con años anteriores encadenando el IPC acumulado mediante las tasas oficiales del INE (de diciembre a diciembre).
+**[elcanosail.github.io/Calculadora-de-Salarios-y-Progresividad-en-Fr-o](https://elcanosail.github.io/Calculadora-de-Salarios-y-Progresividad-en-Fr-o/)**
 
-## 🚀 Instalación y Uso
+## ✨ Funcionalidades
 
-1. **Clona este repositorio:**
-   ```bash
-   git clone [https://github.com/TU-USUARIO/calculadora-nominas-espana.git](https://github.com/TU-USUARIO/calculadora-nominas-espana.git)
-   cd calculadora-nominas-espana
-   Instala las dependencias necesarias:
-Asegúrate de tener Python instalado. Las librerías requeridas son pandas, numpy y openpyxl.
-Instala las dependencias necesarias:
-Asegúrate de tener Python instalado. Las librerías requeridas son pandas, numpy y openpyxl.
+### Interfaz interactiva
+- **Slider de salario bruto** (10.000€ – 500.000€) con input numérico sincronizado
+- **Selector de edad** (menos de 65 / 65-75 / más de 75) con mínimos personal actualizados
+- **Selector de hijos** (0 a 5+) con deducciones por descendientes
+- **Selector de ascendientes** (>65 años)
+- **Texto dinámico** que refleja la configuración del contribuyente
 
-Bash
-pip install -r requirements.txt
-Ejecuta el script:
+### Visualización
+- **Gráfico de barras** ordenado de mayor a menor neto, con eje desde el supletorio
+- **Tabla comparativa** completa: neto, IRPF, tipo efectivo, tipo marginal máximo, diferencia vs supletorio
+- **Gráfico de escalas** interactivo: selecciona CCAA y compara tramos marginales estatal/autonómico/combined
 
-Bash
-python main.py
-(Nota: La generación del archivo Excel tomará unos minutos debido al enorme volumen de datos procesados. ¡Ten paciencia mientras se escribe el documento!)
+### Datos y cálculo
+- **Escalas IRPF 2026 separadas**: cuota íntegra estatal + cuota íntegra autonómica (régimen común) o escala foral única (Navarra, País Vasco)
+- **19 CCAA**: 17 de régimen común + 2 forales, con escalas propias del PDF oficial de Hacienda
+- **Cálculo exacto**: reducción art. 20 LIRPF, mínimo personal y familiar, gastos fijos (2.000€), deducción SMI, límite de retención 43%
+- **CSV descargable** con todas las escalas (`escalas.csv`)
 
-📊 Entendiendo el Output (Excel Generado)
-El script genera un archivo llamado Auditoria_Integral_Nominas_e_Inflacion_2012_2026.xlsx con la siguiente estructura de pestañas:
+### Páginas adicionales
+- **[Fórmulas del cálculo](https://elcanosail.github.io/Calculadora-de-Salarios-y-Progresividad-en-Fr-o/formulas.html)** — Especificación paso a paso con referencias al BOE y ejemplos numéricos de verificación
+- **[Fuentes y referencias](https://elcanosail.github.io/Calculadora-de-Salarios-y-Progresividad-en-Fr-o/fuentes.html)** — PDF oficial de Hacienda, Orden HFP/886/2025, simulador AEAT, verificación cruzada
 
-CONTROL_GENERAL y CONTROL_TRAMOS_IRPF: Diccionario normativo. Aquí puedes auditar los porcentajes de la Seguridad Social, el MEI, los mínimos personales, el mínimo exento y el histórico de tramos del IRPF de cada año.
+## 🔧 Aportaciones respecto al repo original
 
-COMPARATIVA_INFLACION: La "prueba del algodón" macroeconómica. Muestra cuánto poder adquisitivo ha perdido un salario actual frente a su equivalente en el pasado, deflactando el bruto y actualizando todos los impuestos.
+Este fork parte del excelente trabajo de Jon González (auditoría Python → Excel) y añade:
 
-DAT_2012 a DAT_2026: Pestañas anuales de desglose. Muestran para cada salario (de 1€ a 100.000€) el coste laboral, desglose de cotizaciones patronales y obreras, cuota por cada tramo de IRPF, aplicación de límites legales y salario neto final.
+| Aportación | Descripción |
+|-----------|-------------|
+| **Web app interactiva** | De script Python a calculadora web con HTML/CSS/JS puro (sin dependencias) |
+| **Escalas separadas (v3.0)** | Cálculo con dos cuotas separadas (estatal + autonómica) en vez de escala combinada |
+| **19 CCAA** | Las 17 de régimen común + Navarra y País Vasco con escalas forales propias |
+| **Configuración de contribuyente** | Edad, hijos, ascendientes — con mínimos personal actualizados (LIRPF 2024+) |
+| **Gráfico de escalas** | Visualización interactiva de tramos marginales por CCAA |
+| **CSV descargable** | 127 filas con todas las escalas para auditoría |
+| **Página de fórmulas** | Especificación legal con referencias al BOE y ejemplos de verificación |
+| **Página de fuentes** | PDF oficial, AEAT, verificación cruzada con 5 ejemplos numéricos |
+| **Responsive** | Funciona en móvil y escritorio |
 
-🤝 Contribuciones
-¡Las contribuciones son bienvenidas! Si detectas una actualización normativa oficial, un error tipográfico en los Presupuestos Generales del Estado o quieres añadir nuevas funcionalidades (ej. cálculo de IRPF autonómico específico o situaciones familiares):
+## 🏗️ Estructura del proyecto
 
-Haz un Fork del proyecto.
+```
+docs/
+├── index.html      # Calculadora principal
+├── data.js         # Escalas IRPF 2026 (estatal + autonómicas + forales)
+├── app.js          # Lógica de cálculo y renderizado
+├── style.css       # Estilos
+├── formulas.html   # Especificación del cálculo con referencias legales
+├── fuentes.html    # Fuentes, referencias y verificación cruzada
+└── escalas.csv     # CSV descargable con todas las escalas
+```
 
-Crea una rama con tu nueva funcionalidad (git checkout -b feature/NuevaNormativa).
+## 🚀 Uso local
 
-Haz un Commit de tus cambios (git commit -m 'Añade tipos IRPF 2027').
+```bash
+git clone https://github.com/elCanosail/Calculadora-de-Salarios-y-Progresividad-en-Fr-o.git
+cd Calculadora-de-Salarios-y-Progresividad-en-Fr-o/docs
+# Abrir docs/index.html en el navegador (no necesita servidor)
+```
 
-Haz Push a la rama (git push origin feature/NuevaNormativa).
+Para desarrollo con live reload:
+```bash
+npx serve docs
+```
 
-Abre un Pull Request.
+## 📐 Cálculo (régimen común)
 
-⚖️ Aviso Legal
-Este proyecto tiene fines educativos, divulgativos y de análisis económico. Aunque el algoritmo se ha programado siguiendo minuciosamente la normativa de la AEAT y la Seguridad Social española, los resultados son orientativos y no sustituyen el consejo de un profesional fiscal o un graduado social.
+```
+1. Base SS = min(bruto, 58.914€)
+2. Cotización SS = Base SS × 6,35%
+3. Rendimiento neto previo = bruto - cotización SS
+4. Reducción art. 20 = tramos según rn previo
+5. Rendimiento neto = rn previo - 2.000€ gastos - reducción art.20
+6. Base liquidable = rendimiento neto
+7. Cuota estatal = aplicar escala estatal a base liquidable
+8. Cuota autonómica = aplicar escala autonómica a base liquidable
+9. Reducción mínimo personal = aplicar escala a mínimo (5.550€ base)
+10. Cuota líquida = (cuota estatal - mín.est.) + (cuota aut. - mín.aut.)
+11. Deducción SMI si bruto ≤ 18.276€
+12. Límite retención = min(cuota resultante, 43% × rendimiento)
+13. Neto = bruto - cotización SS - IRPF final
+```
 
-📝 Licencia
-Distribuido bajo la Licencia MIT. Siéntete libre de usar, modificar y distribuir este software de manera personal o comercial sin responsabilidad legal para los autores. Consulta el archivo LICENSE incluido en el repositorio para más información.
+## ⚖️ Aviso legal
+
+Calculadora con fines educativos y orientativos. Los resultados no sustituyen el asesoramiento de un profesional fiscal. Las escalas autonómicas proceden del PDF oficial del Ministerio de Hacienda ("Capítulo IV Tributación Autonómica 2026").
+
+## 📝 Licencia
+
+MIT — Ver [LICENSE](LICENSE).
+
+---
+
+*Fork de [jongonzlz/Calculadora-de-Salarios-y-Progresividad-en-Fr-o](https://github.com/jongonzlz/Calculadora-de-Salarios-y-Progresividad-en-Fr-o) con aportaciones propias.*

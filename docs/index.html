@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRPF por CCAA — Comparativa de salario neto en las 19 comunidades</title>
+  <meta name="description" content="Compara tu salario neto en las 19 comunidades autónomas de España. Escalas IRPF 2025-2026, tipos marginales, calculadora interactiva con deducciones.">
+  <meta property="og:title" content="IRPF por Comunidad Autónoma">
+  <meta property="og:description" content="Compara tu salario neto en las 19 CCAA españolas. Escalas IRPF 2025-2026, tipos marginales, calculadora interactiva.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elcanosail.github.io/Calculadora-de-Salarios-y-Progresividad-en-Fr-o/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://elcanosail.github.io/Calculadora-de-Salarios-y-Progresividad-en-Fr-o/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css?v=13">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self';">
+
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>IRPF por <span class="accent">Comunidad</span></h1>
+      <p class="subtitle">Introduce tu salario bruto y compara cuánto cobras neto en cada una de las 19 comunidades autónomas.</p>
+      <div class="credit">
+        Basado en el trabajo de <a href="https://github.com/jongonzlz/Calculadora-de-Salarios-y-Progresividad-en-Fr-o" target="_blank" rel="noopener">Jon González</a> · <a href="https://github.com/elCanosail/Calculadora-de-Salarios-y-Progresividad-en-Fr-o" target="_blank" rel="noopener">Fork con aportaciones</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Input -->
+    <section class="section" id="input-section">
+      <div class="input-row">
+        <div class="input-col">
+          <label for="salary-slider">Salario bruto anual</label>
+          <input type="range" id="salary-slider" min="10000" max="150000" step="500" value="35000">
+          <div class="salary-display" id="salary-display">35.000 €</div>
+        </div>
+        <div class="input-col">
+          <label for="salary-input">O escribe el importe</label>
+          <input type="number" id="salary-input" min="10000" max="500000" step="100" value="35000" inputmode="numeric">
+        </div>
+      </div>
+
+      <div class="config-row">
+        <div class="config-col">
+          <label for="edad-select">Edad</label>
+          <select id="edad-select">
+            <option value="normal" selected>Menos de 65</option>
+            <option value="senior">65 a 75 años</option>
+            <option value="mayor">Más de 75</option>
+          </select>
+        </div>
+        <div class="config-col">
+          <label for="hijos-select">Hijos/as</label>
+          <select id="hijos-select">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5+</option>
+          </select>
+        </div>
+        <div class="config-col">
+          <label for="ascendientes-select">Ascendientes &gt;65</label>
+          <select id="ascendientes-select">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="config-summary" id="config-summary"></div>
+      <div class="audit-notice">
+        <span class="audit-icon">📋</span>
+        <a href="formulas.html" target="_blank" id="formulas-link" class="link-button">Fórmulas del cálculo</a> con referencias al BOE · <a href="fuentes.html" target="_blank" class="link-button">Fuentes y verificación</a> · <a href="escalas.csv" download class="link-button">📊 Descargar escalas (CSV)</a>
+      </div>
+    </section>
+
+    <!-- Chart -->
+    <section class="section" id="chart-section">
+      <h2>Neto anual por CCAA</h2>
+      <p class="section-desc">Ordenado de mayor a menor salario neto. Pasa el cursor para ver el desglose.</p>
+      <div class="card">
+        <div id="bar-chart"></div>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section class="section" id="table-section">
+      <h2>Tabla comparativa completa</h2>
+      <p class="section-desc">Todas las comunidades ordenadas por neto. El tipo marginal máximo marca el tramo más alto que te aplica.</p>
+      <div class="card">
+        <div class="table-wrap">
+          <table id="ccaa-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Comunidad</th>
+                <th>Neto</th>
+                <th>IRPF</th>
+                <th>Tipo efectivo</th>
+                <th>Tipo máx.</th>
+                <th>vs Supletorio</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scales chart -->
+    <section class="section" id="scales-section">
+      <h2>Escalas por CCAA</h2>
+      <p class="section-desc">Selecciona comunidades para comparar sus tramos marginales.</p>
+      <div class="card">
+        <div class="ccaa-pills" id="ccaa-pills"></div>
+        <div id="scale-chart"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Basado en el trabajo de <a href="https://github.com/jongonzlz" target="_blank" rel="noopener">Jon González</a> ·
+        <a href="https://github.com/jongonzlz/Calculadora-de-Salarios-y-Progresividad-en-Fr-o" target="_blank" rel="noopener">Repo original</a> ·
+        <a href="https://github.com/elCanosail/Calculadora-de-Salarios-y-Progresividad-en-Fr-o" target="_blank" rel="noopener">Fork con aportaciones</a> ·
+        Escalas: PDF Hacienda + AEAT · MIT
+      </p>
+    </div>
+  </footer>
+
+  <script src="data.js?v=13"></script>
+  <script src="app.js?v=13"></script>
+</body>
+</html>

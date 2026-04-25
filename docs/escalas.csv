@@ -1,0 +1,188 @@
+CCAA,Tramo,Limite_Inferior,Limite_Superior,Tipo_Estatal,Tipo_Autonomico,Tipo_Combinado,Fuente_PDF
+Supletorio (estatal),1,0,12450,0.0950,0.0950,0.1900,Orden HFP/886/2025
+Supletorio (estatal),2,12450,20200,0.1200,0.1200,0.2400,Orden HFP/886/2025
+Supletorio (estatal),3,20200,35200,0.1500,0.1500,0.3000,Orden HFP/886/2025
+Supletorio (estatal),4,35200,60000,0.1850,0.1850,0.3700,Orden HFP/886/2025
+Supletorio (estatal),5,60000,300000,0.2250,0.2250,0.4500,Orden HFP/886/2025
+Supletorio (estatal),6,300000,Infinity,0.2450,0.2450,0.4900,Orden HFP/886/2025
+Andalucía,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 17
+Andalucía,2,12450,13000,0.1200,0.0950,0.2150,PDF Hacienda pág. 17
+Andalucía,3,13000,20200,0.1200,0.1200,0.2400,PDF Hacienda pág. 17
+Andalucía,4,20200,21100,0.1500,0.1200,0.2700,PDF Hacienda pág. 17
+Andalucía,5,21100,35200,0.1500,0.1500,0.3000,PDF Hacienda pág. 17
+Andalucía,6,35200,60000,0.1850,0.1920,0.3770,PDF Hacienda pág. 17
+Andalucía,7,60000,300000,0.2250,0.2250,0.4500,PDF Hacienda pág. 17
+Andalucía,8,300000,Infinity,0.2450,0.2250,0.4700,PDF Hacienda pág. 17
+Aragón,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 21
+Aragón,2,12450,13072.5,0.1200,0.0950,0.2150,PDF Hacienda pág. 21
+Aragón,3,13072.5,20200,0.1200,0.1200,0.2400,PDF Hacienda pág. 21
+Aragón,4,20200,21210,0.1500,0.1200,0.2700,PDF Hacienda pág. 21
+Aragón,5,21210,35200,0.1500,0.1500,0.3000,PDF Hacienda pág. 21
+Aragón,6,35200,36960,0.1850,0.1500,0.3350,PDF Hacienda pág. 21
+Aragón,7,36960,53407.2,0.1850,0.1920,0.3770,PDF Hacienda pág. 21
+Aragón,8,53407.2,60000,0.1850,0.2150,0.4000,PDF Hacienda pág. 21
+Aragón,9,60000,70000,0.2250,0.2150,0.4400,PDF Hacienda pág. 21
+Aragón,10,70000,90000,0.2250,0.2350,0.4600,PDF Hacienda pág. 21
+Aragón,11,90000,175000,0.2250,0.2550,0.4800,PDF Hacienda pág. 21
+Aragón,12,175000,300000,0.2250,0.2550,0.4800,PDF Hacienda pág. 21
+Aragón,13,300000,Infinity,0.2450,0.2550,0.5000,PDF Hacienda pág. 21
+Asturias,1,0,12450,0.0950,0.0900,0.1850,PDF Hacienda pág. 29
+Asturias,2,12450,17707.2,0.1200,0.1200,0.2400,PDF Hacienda pág. 29
+Asturias,3,17707.2,20200,0.1200,0.1400,0.2600,PDF Hacienda pág. 29
+Asturias,4,20200,35200,0.1500,0.1400,0.2900,PDF Hacienda pág. 29
+Asturias,5,35200,53407.2,0.1850,0.1920,0.3770,PDF Hacienda pág. 29
+Asturias,6,53407.2,60000,0.1850,0.2150,0.4000,PDF Hacienda pág. 29
+Asturias,7,60000,70000,0.2250,0.2150,0.4400,PDF Hacienda pág. 29
+Asturias,8,70000,300000,0.2250,0.2600,0.4850,PDF Hacienda pág. 29
+Asturias,9,300000,Infinity,0.2450,0.2600,0.5050,PDF Hacienda pág. 29
+Baleares,1,0,10000,0.0950,0.0900,0.1850,PDF Hacienda pág. 35
+Baleares,2,10000,12450,0.0950,0.1125,0.2075,PDF Hacienda pág. 35
+Baleares,3,12450,18000,0.1200,0.1125,0.2325,PDF Hacienda pág. 35
+Baleares,4,18000,20200,0.1200,0.1500,0.2700,PDF Hacienda pág. 35
+Baleares,5,20200,30000,0.1500,0.1500,0.3000,PDF Hacienda pág. 35
+Baleares,6,30000,35200,0.1500,0.1920,0.3420,PDF Hacienda pág. 35
+Baleares,7,35200,48000,0.1850,0.1920,0.3770,PDF Hacienda pág. 35
+Baleares,8,48000,60000,0.1850,0.2150,0.4000,PDF Hacienda pág. 35
+Baleares,9,60000,70000,0.2250,0.2150,0.4400,PDF Hacienda pág. 35
+Baleares,10,70000,90000,0.2250,0.2350,0.4600,PDF Hacienda pág. 35
+Baleares,11,90000,175000,0.2250,0.2550,0.4800,PDF Hacienda pág. 35
+Baleares,12,175000,300000,0.2250,0.2550,0.4800,PDF Hacienda pág. 35
+Baleares,13,300000,Infinity,0.2450,0.2550,0.5000,PDF Hacienda pág. 35
+Canarias,1,0,12450,0.0950,0.0900,0.1850,PDF Hacienda pág. 41
+Canarias,2,12450,13748,0.1200,0.0900,0.2100,PDF Hacienda pág. 41
+Canarias,3,13748,19422,0.1200,0.1150,0.2350,PDF Hacienda pág. 41
+Canarias,4,19422,20200,0.1200,0.1400,0.2600,PDF Hacienda pág. 41
+Canarias,5,20200,35200,0.1500,0.1400,0.2900,PDF Hacienda pág. 41
+Canarias,6,35200,35924,0.1850,0.1400,0.3250,PDF Hacienda pág. 41
+Canarias,7,35924,53407,0.1850,0.1920,0.3770,PDF Hacienda pág. 41
+Canarias,8,53407,60000,0.1850,0.2150,0.4000,PDF Hacienda pág. 41
+Canarias,9,60000,70000,0.2250,0.2150,0.4400,PDF Hacienda pág. 41
+Canarias,10,70000,90000,0.2250,0.2350,0.4600,PDF Hacienda pág. 41
+Canarias,11,90000,175000,0.2250,0.2550,0.4800,PDF Hacienda pág. 41
+Canarias,12,175000,300000,0.2250,0.2550,0.4800,PDF Hacienda pág. 41
+Canarias,13,300000,Infinity,0.2450,0.2550,0.5000,PDF Hacienda pág. 41
+Cantabria,1,0,12450,0.0950,0.0850,0.1800,PDF Hacienda pág. 53
+Cantabria,2,12450,13000,0.1200,0.0850,0.2050,PDF Hacienda pág. 53
+Cantabria,3,13000,20200,0.1200,0.1100,0.2300,PDF Hacienda pág. 53
+Cantabria,4,20200,21000,0.1500,0.1100,0.2600,PDF Hacienda pág. 53
+Cantabria,5,21000,35200,0.1500,0.1450,0.2950,PDF Hacienda pág. 53
+Cantabria,6,35200,60000,0.1850,0.2000,0.3850,PDF Hacienda pág. 53
+Cantabria,7,60000,90000,0.2250,0.2150,0.4400,PDF Hacienda pág. 53
+Cantabria,8,90000,175000,0.2250,0.2450,0.4700,PDF Hacienda pág. 53
+Cantabria,9,175000,300000,0.2250,0.2700,0.4950,PDF Hacienda pág. 53
+Cantabria,10,300000,Infinity,0.2450,0.2700,0.5150,PDF Hacienda pág. 53
+Castilla y León,1,0,12450,0.0950,0.0900,0.1850,PDF Hacienda pág. 59
+Castilla y León,2,12450,20200,0.1200,0.1200,0.2400,PDF Hacienda pág. 59
+Castilla y León,3,20200,35200,0.1500,0.1500,0.3000,PDF Hacienda pág. 59
+Castilla y León,4,35200,53407.2,0.1850,0.1920,0.3770,PDF Hacienda pág. 59
+Castilla y León,5,53407.2,60000,0.1850,0.2150,0.4000,PDF Hacienda pág. 59
+Castilla y León,6,60000,300000,0.2250,0.2150,0.4400,PDF Hacienda pág. 59
+Castilla y León,7,300000,Infinity,0.2450,0.2150,0.4600,PDF Hacienda pág. 59
+Castilla-La Mancha,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 65
+Castilla-La Mancha,2,12450,20200,0.1200,0.1200,0.2400,PDF Hacienda pág. 65
+Castilla-La Mancha,3,20200,35200,0.1500,0.1500,0.3000,PDF Hacienda pág. 65
+Castilla-La Mancha,4,35200,60000,0.1850,0.1920,0.3770,PDF Hacienda pág. 65
+Castilla-La Mancha,5,60000,90000,0.2250,0.2150,0.4400,PDF Hacienda pág. 65
+Castilla-La Mancha,6,90000,175000,0.2250,0.2450,0.4700,PDF Hacienda pág. 65
+Castilla-La Mancha,7,175000,300000,0.2250,0.2700,0.4950,PDF Hacienda pág. 65
+Castilla-La Mancha,8,300000,Infinity,0.2450,0.2700,0.5150,PDF Hacienda pág. 65
+Cataluña,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 63
+Cataluña,2,12450,12500,0.1200,0.0950,0.2150,PDF Hacienda pág. 63
+Cataluña,3,12500,20200,0.1200,0.1250,0.2450,PDF Hacienda pág. 63
+Cataluña,4,20200,22000,0.1500,0.1250,0.2750,PDF Hacienda pág. 63
+Cataluña,5,22000,33000,0.1500,0.1600,0.3100,PDF Hacienda pág. 63
+Cataluña,6,33000,35200,0.1500,0.1900,0.3400,PDF Hacienda pág. 63
+Cataluña,7,35200,53000,0.1850,0.1900,0.3750,PDF Hacienda pág. 63
+Cataluña,8,53000,60000,0.1850,0.2150,0.4000,PDF Hacienda pág. 63
+Cataluña,9,60000,90000,0.2250,0.2150,0.4400,PDF Hacienda pág. 63
+Cataluña,10,90000,120000,0.2250,0.2350,0.4600,PDF Hacienda pág. 63
+Cataluña,11,120000,175000,0.2250,0.2450,0.4700,PDF Hacienda pág. 63
+Cataluña,12,175000,300000,0.2250,0.2550,0.4800,PDF Hacienda pág. 63
+Cataluña,13,300000,Infinity,0.2450,0.2550,0.5000,PDF Hacienda pág. 63
+Extremadura,1,0,12450,0.0950,0.0800,0.1750,PDF Hacienda pág. 79
+Extremadura,2,12450,15000,0.1200,0.1000,0.2200,PDF Hacienda pág. 79
+Extremadura,3,15000,20200,0.1200,0.1600,0.2800,PDF Hacienda pág. 79
+Extremadura,4,20200,24200,0.1500,0.1950,0.3450,PDF Hacienda pág. 79
+Extremadura,5,24200,35200,0.1500,0.2000,0.3500,PDF Hacienda pág. 79
+Extremadura,6,35200,45000,0.1850,0.2350,0.4200,PDF Hacienda pág. 79
+Extremadura,7,45000,60000,0.1850,0.2700,0.4550,PDF Hacienda pág. 79
+Extremadura,8,60000,80000,0.2250,0.2900,0.5150,PDF Hacienda pág. 79
+Extremadura,9,80000,120000,0.2250,0.3200,0.5450,PDF Hacienda pág. 79
+Extremadura,10,120000,300000,0.2250,0.3500,0.5750,PDF Hacienda pág. 79
+Extremadura,11,300000,Infinity,0.2450,0.3500,0.5950,PDF Hacienda pág. 79
+Galicia,1,0,12450,0.0950,0.0900,0.1850,PDF Hacienda pág. 83
+Galicia,2,12450,12985.35,0.1200,0.0900,0.2100,PDF Hacienda pág. 83
+Galicia,3,12985.35,20200,0.1200,0.1165,0.2365,PDF Hacienda pág. 83
+Galicia,4,20200,21068.6,0.1500,0.1165,0.2665,PDF Hacienda pág. 83
+Galicia,5,21068.6,35200,0.1500,0.1490,0.2990,PDF Hacienda pág. 83
+Galicia,6,35200,60000,0.1850,0.1840,0.3690,PDF Hacienda pág. 83
+Galicia,7,60000,300000,0.2250,0.2250,0.4500,PDF Hacienda pág. 83
+Galicia,8,300000,Infinity,0.2450,0.2250,0.4700,PDF Hacienda pág. 83
+La Rioja,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 89
+La Rioja,2,12450,20200,0.1200,0.1200,0.2400,PDF Hacienda pág. 89
+La Rioja,3,20200,35200,0.1500,0.1500,0.3000,PDF Hacienda pág. 89
+La Rioja,4,35200,60000,0.1850,0.1920,0.3770,PDF Hacienda pág. 89
+La Rioja,5,60000,300000,0.2250,0.2250,0.4500,PDF Hacienda pág. 89
+La Rioja,6,300000,Infinity,0.2450,0.2250,0.4700,PDF Hacienda pág. 89
+Madrid,1,0,12450,0.0950,0.0850,0.1800,PDF Hacienda pág. 47
+Madrid,2,12450,13362.22,0.1200,0.0850,0.2050,PDF Hacienda pág. 47
+Madrid,3,13362.22,19004.63,0.1200,0.1070,0.2270,PDF Hacienda pág. 47
+Madrid,4,19004.63,20200,0.1200,0.1280,0.2480,PDF Hacienda pág. 47
+Madrid,5,20200,35200,0.1500,0.1280,0.2780,PDF Hacienda pág. 47
+Madrid,6,35200,35425.68,0.1850,0.1280,0.3130,PDF Hacienda pág. 47
+Madrid,7,35425.68,60000,0.1850,0.1790,0.3640,PDF Hacienda pág. 47
+Madrid,8,60000,90000,0.2250,0.2050,0.4300,PDF Hacienda pág. 47
+Madrid,9,90000,175000,0.2250,0.2350,0.4600,PDF Hacienda pág. 47
+Madrid,10,175000,300000,0.2250,0.2550,0.4800,PDF Hacienda pág. 47
+Madrid,11,300000,Infinity,0.2450,0.2550,0.5000,PDF Hacienda pág. 47
+Murcia,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 99
+Murcia,2,12450,20200,0.1200,0.1120,0.2320,PDF Hacienda pág. 99
+Murcia,3,20200,35200,0.1500,0.1330,0.2830,PDF Hacienda pág. 99
+Murcia,4,35200,60000,0.1850,0.1920,0.3770,PDF Hacienda pág. 99
+Murcia,5,60000,300000,0.2250,0.2250,0.4500,PDF Hacienda pág. 99
+Murcia,6,300000,Infinity,0.2450,0.2250,0.4700,PDF Hacienda pág. 99
+Navarra (foral),1,0,4292,-,0.1300,PDF Hacienda pág. 129
+Navarra (foral),2,4292,8584,-,0.2200,PDF Hacienda pág. 129
+Navarra (foral),3,8584,15634,-,0.2500,PDF Hacienda pág. 129
+Navarra (foral),4,15634,24704,-,0.2800,PDF Hacienda pág. 129
+Navarra (foral),5,24704,33984,-,0.3500,PDF Hacienda pág. 129
+Navarra (foral),6,33984,52600,-,0.4000,PDF Hacienda pág. 129
+Navarra (foral),7,52600,70000,-,0.4500,PDF Hacienda pág. 129
+Navarra (foral),8,70000,90000,-,0.4700,PDF Hacienda pág. 129
+Navarra (foral),9,90000,180000,-,0.4900,PDF Hacienda pág. 129
+Navarra (foral),10,180000,300000,-,0.5000,PDF Hacienda pág. 129
+Navarra (foral),11,300000,Infinity,-,0.5200,PDF Hacienda pág. 129
+País Vasco (foral),1,0,17360,-,0.2300,PDF Hacienda pág. 149
+País Vasco (foral),2,17360,32060,-,0.2800,PDF Hacienda pág. 149
+País Vasco (foral),3,32060,47560,-,0.3500,PDF Hacienda pág. 149
+País Vasco (foral),4,47560,78060,-,0.4000,PDF Hacienda pág. 149
+País Vasco (foral),5,78060,108560,-,0.4500,PDF Hacienda pág. 149
+País Vasco (foral),6,108560,192560,-,0.4700,PDF Hacienda pág. 149
+País Vasco (foral),7,192560,Infinity,-,0.4900,PDF Hacienda pág. 149
+C. Valenciana,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 111
+C. Valenciana,2,12450,17000,0.1200,0.1150,0.2350,PDF Hacienda pág. 111
+C. Valenciana,3,17000,20200,0.1200,0.1350,0.2550,PDF Hacienda pág. 111
+C. Valenciana,4,20200,22000,0.1500,0.1350,0.2850,PDF Hacienda pág. 111
+C. Valenciana,5,22000,30000,0.1500,0.1500,0.3000,PDF Hacienda pág. 111
+C. Valenciana,6,30000,35200,0.1500,0.1700,0.3200,PDF Hacienda pág. 111
+C. Valenciana,7,35200,40000,0.1850,0.1700,0.3550,PDF Hacienda pág. 111
+C. Valenciana,8,40000,50000,0.1850,0.1850,0.3700,PDF Hacienda pág. 111
+C. Valenciana,9,50000,60000,0.1850,0.1950,0.3800,PDF Hacienda pág. 111
+C. Valenciana,10,60000,65000,0.2250,0.1950,0.4200,PDF Hacienda pág. 111
+C. Valenciana,11,65000,80000,0.2250,0.2150,0.4400,PDF Hacienda pág. 111
+C. Valenciana,12,80000,120000,0.2250,0.2300,0.4550,PDF Hacienda pág. 111
+C. Valenciana,13,120000,175000,0.2250,0.2700,0.4950,PDF Hacienda pág. 111
+C. Valenciana,14,175000,300000,0.2250,0.2900,0.5150,PDF Hacienda pág. 111
+C. Valenciana,15,300000,Infinity,0.2450,0.2900,0.5350,PDF Hacienda pág. 111
+Ceuta,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 165
+Ceuta,2,12450,20200,0.1200,0.1200,0.2400,PDF Hacienda pág. 165
+Ceuta,3,20200,35200,0.1500,0.1500,0.3000,PDF Hacienda pág. 165
+Ceuta,4,35200,60000,0.1850,0.1850,0.3700,PDF Hacienda pág. 165
+Ceuta,5,60000,300000,0.2250,0.2250,0.4500,PDF Hacienda pág. 165
+Ceuta,6,300000,Infinity,0.2450,0.2450,0.4900,PDF Hacienda pág. 165
+Melilla,1,0,12450,0.0950,0.0950,0.1900,PDF Hacienda pág. 165
+Melilla,2,12450,20200,0.1200,0.1200,0.2400,PDF Hacienda pág. 165
+Melilla,3,20200,35200,0.1500,0.1500,0.3000,PDF Hacienda pág. 165
+Melilla,4,35200,60000,0.1850,0.1850,0.3700,PDF Hacienda pág. 165
+Melilla,5,60000,300000,0.2250,0.2250,0.4500,PDF Hacienda pág. 165
+Melilla,6,300000,Infinity,0.2450,0.2450,0.4900,PDF Hacienda pág. 165

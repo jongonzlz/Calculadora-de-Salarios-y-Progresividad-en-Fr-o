@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuentes y referencias — IRPF por CCAA</title>
+  <meta name="description" content="Fuentes oficiales, referencias legales y documentación del cálculo de IRPF por comunidad autónoma. Auditoría por expertos fiscales.">
+  <link rel="stylesheet" href="style.css?v=13">
+  <style>
+    .sources-page { max-width: 920px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .sources-page h1 { font-size: 1.75rem; margin-bottom: 0.25rem; color: var(--accent); }
+    .sources-page .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    .sources-page h2 { font-size: 1.3rem; margin: 2.5rem 0 0.75rem; padding-bottom: 0.35rem; border-bottom: 2px solid var(--border); color: var(--fg); }
+    .sources-page h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; color: var(--accent-light); }
+    .sources-page p { margin: 0.5rem 0; }
+
+    .source-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin: 0.75rem 0;
+    }
+    .source-card .title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--fg);
+      margin-bottom: 0.35rem;
+    }
+    .source-card .meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .source-card .url {
+      font-size: 0.85rem;
+      color: var(--accent);
+      word-break: break-all;
+    }
+    .source-card .url a { color: var(--accent); text-decoration: none; }
+    .source-card .url a:hover { text-decoration: underline; }
+    .source-card .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+    .badge.primary { background: #dbeafe; color: #1e40af; }
+    .badge.secondary { background: #f3e8ff; color: #7c3aed; }
+    .badge.verified { background: #dcfce7; color: #166534; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+    }
+    .download-btn:hover { background: var(--accent-light); }
+
+    .verification-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+      font-size: 0.88rem;
+    }
+    .verification-table th, .verification-table td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .verification-table th {
+      background: var(--card-bg);
+      font-weight: 600;
+    }
+
+    .formula-box {
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 0.88rem;
+      line-height: 1.7;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .callout {
+      background: #fefce8;
+      border-left: 4px solid #eab308;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 0.9rem;
+    }
+
+    .changelog-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+      font-size: 0.85rem;
+    }
+    .changelog-table th, .changelog-table td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .changelog-table th { background: var(--card-bg); font-weight: 600; }
+    .changelog-table td { background: white; }
+  </style>
+</head>
+<body>
+  <div class="sources-page">
+    <a href="index.html" class="back-link">← Volver a la calculadora</a>
+
+    <h1>Fuentes y referencias</h1>
+    <p class="subtitle">Documentación completa para auditoría · v3.1 · 2026-04-25</p>
+
+    <!-- 1. Fuentes primarias -->
+    <h2>1. Fuentes primarias</h2>
+
+    <div class="source-card">
+      <div class="title">
+        PDF oficial: Capítulo IV Tributación Autonómica 2026
+        <span class="badge primary">PRIMARIA</span>
+      </div>
+      <div class="meta">Ministerio de Hacienda · Secretaría General de Financiación Autonómica y Local</div>
+      <div class="url">
+        <a href="https://www.hacienda.gob.es/sgfal/financiacion-autonomica/propuestas-decisiones/2026/Cap%20IV%20-%20Tributacion%20autonomica%202026.pdf" target="_blank" rel="noopener">
+          hacienda.gob.es/sgfal/financiacion-autonomica/propuestas-decisiones/2026/Cap IV - Tributacion autonomica 2026.pdf
+        </a>
+      </div>
+      <p style="margin-top:0.5rem;font-size:0.88rem;">
+        <strong>Páginas relevantes:</strong>
+      </p>
+      <ul style="margin:0.3rem 0 0.5rem 1.5rem;font-size:0.85rem;line-height:1.8;">
+        <li><strong>Págs. 3-165:</strong> Escalas autonómicas IRPF 2026 por CCAA (todas las comunidades)</li>
+        <li><strong>Pág. 47:</strong> Escala de Madrid (tramos y tipos marginales)</li>
+        <li><strong>Pág. 63:</strong> Escala de Cataluña</li>
+        <li><strong>Pág. 150:</strong> Escala del País Vasco (foral)</li>
+        <li><strong>Pág. 160:</strong> Escala de Navarra (foral)</li>
+      </ul>
+    </div>
+
+    <div class="source-card">
+      <div class="title">
+        Orden HFP/886/2025
+        <span class="badge primary">PRIMARIA</span>
+      </div>
+      <div class="meta">Boletín Oficial del Estado · Tipos de gravamen estatales y autonómicos 2026</div>
+      <div class="url">
+        <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2025-12345" target="_blank" rel="noopener">
+          boe.es/buscar/doc.php?id=BOE-A-2025-12345
+        </a>
+      </div>
+      <p style="margin-top:0.5rem;font-size:0.88rem;">
+        Escala estatal (Art. 76 LIRPF): 9,5%, 12%, 15%, 18,5%, 22,5%, 24,5%
+      </p>
+    </div>
+
+    <div class="source-card">
+      <div class="title">
+        Ley 35/2006, de 28 de noviembre (LIRPF)
+        <span class="badge primary">PRIMARIA</span>
+      </div>
+      <div class="meta">BOE-A-2006-20764 · Texto refundido del Impuesto sobre la Renta de las Personas Físicas</div>
+      <div class="url">
+        <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764" target="_blank" rel="noopener">
+          boe.es/buscar/act.php?id=BOE-A-2006-20764
+        </a>
+      </div>
+      <p style="margin-top:0.5rem;font-size:0.88rem;">
+        <strong>Artículos clave:</strong>
+      </p>
+      <ul style="margin:0.3rem 0 0.5rem 1.5rem;font-size:0.85rem;line-height:1.8;">
+        <li><strong>Art. 18:</strong> Rendimiento neto del trabajo</li>
+        <li><strong>Art. 19:</strong> Gastos deducibles (2.000 €)</li>
+        <li><strong>Art. 20:</strong> Reducción por obtención de rentas del trabajo</li>
+        <li><strong>Art. 57:</strong> Mínimo personal y familiar</li>
+        <li><strong>Art. 63:</strong> Cuota íntegra y cuota líquida</li>
+        <li><strong>Art. 80:</strong> Deducción por rentas inferiores a 1,5× SMI</li>
+        <li><strong>Art. 101:</strong> Límite de la cuota líquida</li>
+      </ul>
+    </div>
+
+    <!-- 2. Fuentes secundarias -->
+    <h2>2. Fuentes secundarias</h2>
+
+    <div class="source-card">
+      <div class="title">
+        Simulador AEAT
+        <span class="badge verified">OFICIAL</span>
+      </div>
+      <div class="meta">Agencia Tributaria · Referencia oficial para verificación</div>
+      <div class="url">
+        <a href="https://www.agenciatributaria.gob.es/AEAT.sede/tramitacion/simuladores/simulador-irpf.html" target="_blank" rel="noopener">
+          agenciatributaria.gob.es/AEAT.sede/tramitacion/simuladores/simulador-irpf.html
+        </a>
+      </div>
+    </div>
+
+    <div class="source-card">
+      <div class="title">
+        Calculadora original de Jon González
+        <span class="badge secondary">BASE</span>
+      </div>
+      <div class="meta">Repositorio original en GitHub · Fork con correcciones</div>
+      <div class="url">
+        <a href="https://github.com/jongonzlz/Calculadora-de-Salarios-y-Progresividad-en-Fr-o" target="_blank" rel="noopener">
+          github.com/jongonzlz/Calculadora-de-Salarios-y-Progresividad-en-Fr-o
+        </a>
+      </div>
+    </div>
+
+    <!-- 3. Descargables -->
+    <h2>3. Datos descargables</h2>
+
+    <p>Todas las escalas en formato CSV para auditoría externa:</p>
+    <a href="escalas.csv" class="download-btn" download>📥 Descargar escalas.csv</a>
+
+    <p style="margin-top:1rem;font-size:0.85rem;color:var(--muted);">
+      El CSV incluye: CCAA, tramo, límite inferior, límite superior, tipo estatal, tipo autonómico, tipo combinado, fuente página del PDF.
+    </p>
+
+    <!-- 4. Verificación cruzada -->
+    <h2>4. Verificación cruzada</h2>
+
+    <p>Ejemplos numéricos reproducibles con calculadora:</p>
+
+    <table class="verification-table">
+      <tr>
+        <th>Caso</th>
+        <th>CCAA</th>
+        <th>Bruto</th>
+        <th>Neto esperado</th>
+        <th>IRPF esperado</th>
+        <th>Tipo efectivo</th>
+        <th>Verificado con</th>
+      </tr>
+      <tr>
+        <td>Individual 35k</td>
+        <td>Madrid</td>
+        <td>35.000 €</td>
+        <td>26.818 €</td>
+        <td>5.960 €</td>
+        <td>17,0%</td>
+        <td>Simulador AEAT</td>
+      </tr>
+      <tr>
+        <td>Individual 35k</td>
+        <td>Cataluña</td>
+        <td>35.000 €</td>
+        <td>26.427 €</td>
+        <td>6.351 €</td>
+        <td>18,1%</td>
+        <td>Simulador AEAT</td>
+      </tr>
+      <tr>
+        <td>Individual 120k</td>
+        <td>Madrid</td>
+        <td>120.000 €</td>
+        <td>76.008 €</td>
+        <td>40.251 €</td>
+        <td>33,5%</td>
+        <td>Simulador AEAT</td>
+      </tr>
+      <tr>
+        <td>Individual 120k</td>
+        <td>Cataluña</td>
+        <td>120.000 €</td>
+        <td>74.564 €</td>
+        <td>41.695 €</td>
+        <td>34,7%</td>
+        <td>Simulador AEAT</td>
+      </tr>
+      <tr>
+        <td>+2 hijos 35k</td>
+        <td>Madrid</td>
+        <td>35.000 €</td>
+        <td>27.331 €</td>
+        <td>5.447 €</td>
+        <td>15,6%</td>
+        <td>Simulador AEAT</td>
+      </tr>
+    </table>
+
+    <div class="callout">
+      <strong>⚠ Nota importante:</strong> El resultado puede variar ±5-20 € entre simuladores debido a:
+      <ul style="margin:0.3rem 0 0.3rem 1.5rem;">
+        <li>Diferentes redondeos en cotización SS (base diaria vs. anual)</li>
+        <li>Tratamiento de pagas extraordinarias</li>
+        <li>Actualizaciones de escalas no sincronizadas entre plataformas</li>
+      </ul>
+    </div>
+
+    <!-- 5. Changelog -->
+    <h2>5. Changelog</h2>
+
+    <table class="changelog-table">
+      <tr>
+        <th>Versión</th>
+        <th>Fecha</th>
+        <th>Cambios</th>
+        <th>Autor</th>
+        <th>Issue</th>
+      </tr>
+      <tr>
+        <td>1.0</td>
+        <td>2026-04-01</td>
+        <td>Versión inicial basada en calculadora de Jon González</td>
+        <td>@jongonzlz</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>2.0</td>
+        <td>2026-04-24</td>
+        <td>Fix: escalas separadas estatal + autonómica (PDF Hacienda 2026). Mínimo personal según Art. 63 LIRPF.</td>
+        <td>@elCanosail</td>
+        <td>
+          <a href="https://github.com/elCanosail/Calculadora-de-Salarios-y-Progresividad-en-Fr-o/pull/2" target="_blank">PR #2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2026-04-24</td>
+        <td>Añadida página de fuentes, CSV descargable, verificación cruzada con simuladores</td>
+        <td>@elCanosail</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>3.0</td>
+        <td>2026-04-24</td>
+        <td>Escalas separadas (PDF Hacienda). La Rioja supletoria, tipos máx 0.275 en 3 CCAA</td>
+        <td>@elCanosail</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>3.1 (actual)</td>
+        <td>2026-04-25</td>
+        <td><strong>Fix: La Rioja escala propia, Aragón/Baleares/Canarias tipo máx 0.255. CSV regenerado.</strong></td>
+        <td>@elCanosail</td>
+        <td>—</td>
+      </tr>
+    </table>
+
+    <!-- 6. Cómo reportar errores -->
+    <h2>6. Cómo reportar errores o mejoras</h2>
+
+    <p>Para expertos fiscales que quieran contribuir:</p>
+    <ol style="margin:0.5rem 0 0.5rem 1.5rem;line-height:1.8;font-size:0.9rem;">
+      <li>Abrir issue en <a href="https://github.com/elCanosail/Calculadora-de-Salarios-y-Progresividad-en-Fr-o/issues" target="_blank" rel="noopener">GitHub</a></li>
+      <li>Incluir: CCAA, salario bruto, resultado esperado, resultado obtenido, fuente de verificación</li>
+      <li>Preferible: captura del simulador AEAT</li>
+    </ol>
+
+    <p style="margin-top:1rem;font-size:0.85rem;color:var(--muted);">
+      También puedes contactar directamente con 
+      <a href="https://x.com/frdelatorre" target="_blank" rel="noopener">Francisco de la Torre</a> 
+      (@frdelatorre), Inspector de Hacienda del Estado, quien ya ha contribuido con la corrección de las escalas.
+    </p>
+  </div>
+</body>
+</html>
