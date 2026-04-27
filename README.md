@@ -38,6 +38,8 @@ Bash
 python main.py
 (Nota: La generación del archivo Excel tomará unos minutos debido al enorme volumen de datos procesados. ¡Ten paciencia mientras se escribe el documento!)
 
+Consulta rápida por CLI: si solo quieres calcular salarios puntuales, tablas pequeñas o comparativas entre años sin generar el Excel masivo, revisa [CLI.md](CLI.md).
+
 📊 Entendiendo el Output (Excel Generado)
 El script genera un archivo llamado Auditoria_Integral_Nominas_e_Inflacion_2012_2026.xlsx con la siguiente estructura de pestañas:
 
